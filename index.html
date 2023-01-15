@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boxcoach</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="splash">
+        <h1>Boxcoach</h1>
+        <p>Customize the settings, or hit Generate as is.</p>
+      </div>
+      <div id="form">
+        <form>
+          <div class="row row-number">
+            <input id="punches" type="number" name="punches" value="2">
+            <label for="punches">Starting punches</label>
+          </div>
+        
+          <div class="row row-number">
+            <input id="rounds" type="number" name="rounds" value="5">
+            <label for="rounds">Rounds in set</label>
+          </div>
+        
+          <div class="row row-number">
+            <input id="sets" type="number" name="sets" value="4">
+            <label for="sets">Sets</label>
+          </div>
+
+        
+          <div class="row row-checkbox">
+            <label for="no_doubles">
+              <input id="no_doubles" type="checkbox" name="no_doubles">
+              <span>force no doubles</span>
+            </label>
+          </div>
+
+          <div class="row row-checkbox">
+            <label for="force_uniques">
+              <input id="force_uniques" type="checkbox" name="force_uniques" checked>
+              <span>force uniques</span>
+            </label>
+          </div>
+
+          <div class="row row-checkbox">
+            <label for="alternate_arm">
+              <input id="alternate_arm" type="checkbox" name="alternate_arm" checked>
+              <span>alternate arms</span>
+            </label>
+          </div>
+        
+          <div class="row row-checkbox">
+            <label for="increase_punches">
+              <input id="increase_punches" type="checkbox" name="increase_punches" checked>
+              <span>each round increases punches</span>
+            </label>
+          </div>
+        
+          <button id="generate">Generate workout</button>
+        </form>
+      </div>
+
+      <div id="results"></div>
+      <button id="toggle-punch-names">Show punch names</button>
+    </div>
+    
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
