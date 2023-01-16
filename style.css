@@ -128,11 +128,17 @@ img{
 .round h4{
   margin-bottom:0;
 }
+.punch strong{
+  font-size: 2rem;
+}
 .punch em{
   display: none;
 }
 body.show-punch-names .punch em{
   display: inline;
+}
+body.show-punch-names .punch strong{
+  font-size: 1.4rem;
 }
 
 .punch{
